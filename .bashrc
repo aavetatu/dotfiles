@@ -118,10 +118,10 @@ export MANPAGER='"/usr/local/bin/nvim-linux64/bin/nvim" +Man!'
 # 
 declare -A pomo_options
 pomo_options=(
-  ["sesh"]="45"
+  ["work"]="45"
   ["shortBreak"]="5"
   ["break"]="10"
-  ["shortSesh"]="25"
+  ["shortWork"]="25"
 )
 
 pomodoro() {
