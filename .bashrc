@@ -111,16 +111,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# use Neovim as default text editor and Manpager
 export EDITOR='/usr/local/bin/nvim-linux64/bin/nvim'
 export MANPAGER='"/usr/local/bin/nvim-linux64/bin/nvim" +Man!'
 
+# 
 declare -A pomo_options
 pomo_options=(
-  ["work"]="45"
-  ["schoolbreak"]="5"
+  ["sesh"]="45"
+  ["shortBreak"]="5"
   ["break"]="10"
-  ["school"]="25"
-  #    ["emacs"]="30"
+  ["shortSesh"]="25"
 )
 
 pomodoro() {
@@ -132,4 +133,5 @@ pomodoro() {
   fi
 }
 
+# bind CapsLock to Backspace key for Colemak
 xmodmap -e "keycode 22 = Caps_Lock"
