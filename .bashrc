@@ -112,8 +112,8 @@ if ! shopt -oq posix; then
 fi
 
 # use Neovim as default text editor and Manpager
-export EDITOR='/usr/local/bin/nvim-linux64/bin/nvim'
-export MANPAGER='"/usr/local/bin/nvim-linux64/bin/nvim" +Man!'
+export EDITOR='/usr/bin/nvim'
+export MANPAGER='"/usr/bin/nvim" +Man!'
 
 # 
 declare -A pomo_options
