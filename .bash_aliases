@@ -4,4 +4,3 @@ alias br='pomodoro "break"'
 alias sbr='pomodoro "shortBreak"'
 alias swo='pomodoro "shortWork"'
 
-alias nvim='/usr/local/bin/nvim-linux64/bin/nvim'
