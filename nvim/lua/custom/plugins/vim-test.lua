@@ -2,8 +2,8 @@ return {
 	"vim-test/vim-test",
 	lazy = false,
 	init = function()
-		-- Set the test strategy
-		vim.g["test#strategy"] = "neovim"
+		-- Set the test strategy for neovim
+		vim.g["test#strategy"] = "vimux"
 	end,
 	config = function()
 		-- Key mappings for running tests
