@@ -135,3 +135,9 @@ pomodoro() {
 
 # bind CapsLock to Backspace key for Colemak
 xmodmap -e "keycode 22 = Caps_Lock"
+
+
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
+
+# Use direnv to automatically load environmental variables
+eval "$(direnv hook bash)"
