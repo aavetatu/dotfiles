@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # kickstart.nvim
 
 ## Introduction
@@ -236,3 +237,7 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
+=======
+# config.neovim
+My neovim configuration
+>>>>>>> fix/mergeConflict
