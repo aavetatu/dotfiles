@@ -5,6 +5,7 @@ return {
 		-- Set the test strategy for neovim
 		vim.g["test#strategy"] = "vimux"
 	end,
+	dependencies = { "preservim/vimux" },
 	config = function()
 		-- Key mappings for running tests
 		local keymap = vim.keymap.set
