@@ -371,9 +371,6 @@
             "showEditDiffs": false,
             "separatedDiffs": false
         },
-        "MessageTags": {
-            "enabled": false
-        },
         "MoreQuickReactions": {
             "enabled": false
         },
@@ -1222,6 +1219,7 @@
                     "1470483893688991745",
                     "1480604391718256773",
                     "1478512780595167233",
+                    "1478542747848802314",
                     "1474092541644247315",
                     "1474205151999950889",
                     "1470543032142139434",
@@ -1233,7 +1231,7 @@
                     "1473407935970410724"
                 ]
             },
-            "unclaimedUnignoredQuests": 1,
+            "unclaimedUnignoredQuests": 0,
             "onQuestsPage": false,
             "triggerQuestsRerender": false,
             "resumeQuestIDs": {
@@ -1581,6 +1579,10 @@
         },
         "NoDefaultHangStatus": {
             "enabled": false
+        },
+        "CustomCommands": {
+            "enabled": false,
+            "tagsList": {}
         }
     },
     "uiElements": {
@@ -1598,7 +1600,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1773421294525
+        "settingsSyncVersion": 1773614298896
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
