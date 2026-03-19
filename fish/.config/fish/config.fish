@@ -4,7 +4,7 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 set -x EDITOR nvim
 set -x SUDO_EDITOR nvim
 export MANPAGER='nvim +Man!'
-alias vim='nvim'
+alias v='nvim'
 
 # git
 alias g='git'
