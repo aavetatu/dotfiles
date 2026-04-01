@@ -291,7 +291,8 @@
             "zoom": 2,
             "saveZoomValues": true,
             "nearestNeighbour": false,
-            "square": false
+            "square": false,
+            "zoomSpeed": 0.5
         },
         "ImplicitRelationships": {
             "enabled": true,
@@ -358,18 +359,19 @@
         },
         "MessageLogger": {
             "enabled": true,
-            "deleteStyle": "text",
+            "deleteStyle": "overlay",
             "logDeletes": true,
-            "collapseDeleted": false,
+            "collapseDeleted": true,
             "logEdits": true,
             "inlineEdits": true,
-            "ignoreBots": false,
+            "ignoreBots": true,
             "ignoreSelf": false,
             "ignoreUsers": "",
             "ignoreChannels": "",
             "ignoreGuilds": "",
-            "showEditDiffs": false,
-            "separatedDiffs": false
+            "showEditDiffs": true,
+            "separatedDiffs": true,
+            "ignoreSelfEdits": true
         },
         "MoreQuickReactions": {
             "enabled": false
@@ -683,7 +685,8 @@
             "deafenMessage": "{{USER}} deafened",
             "undeafenMessage": "{{USER}} undeafened",
             "unmuteMessage": "{{USER}} unmuted",
-            "moveMessage": "{{USER}} moved to {{CHANNEL}}"
+            "moveMessage": "{{USER}} moved to {{CHANNEL}}",
+            "muteMessage": "{{USER}} muted"
         },
         "ViewIcons": {
             "enabled": false
@@ -789,7 +792,7 @@
             "enabled": true,
             "tabBarPosition": "top",
             "bookmarksIndependentFromTabs": true,
-            "switchToExistingTab": false,
+            "switchToExistingTab": true,
             "createNewTabIfNotExists": false,
             "showBookmarkBar": true,
             "widerTabsAndBookmarks": false,
@@ -825,13 +828,18 @@
             "oneTabPerServer": false,
             "maxOpenTabs": 0,
             "openNewTabsInCompactMode": false,
-            "renderAllTabs": false,
+            "renderAllTabs": true,
             "showTabNumbers": false,
             "tabNumberPosition": "left",
             "showResizeHandle": true,
             "noPomeloNames": false,
             "showStatusIndicators": true,
-            "bookmarkNotificationDot": true
+            "bookmarkNotificationDot": true,
+            "persistUnreadCountFallback": true,
+            "tabSet": {},
+            "enableRapidNavigation": false,
+            "rapidNavigationThreshold": 3,
+            "openInNewTabAutoSwitch": true
         },
         "CharacterCounter": {
             "enabled": false
@@ -945,7 +953,7 @@
             "enabled": false
         },
         "Ghosted": {
-            "enabled": true,
+            "enabled": false,
             "showIndicator": true,
             "maxInactiveTimeMs": 0,
             "exemptedChannels": "",
@@ -1216,24 +1224,27 @@
             "ignoredQuestIDs": {
                 "610157877491007583": [
                     "1475591247103004672",
-                    "1470483893688991745",
-                    "1480604391718256773",
                     "1478512780595167233",
+                    "1480604391718256773",
                     "1478542747848802314",
+                    "1475987384116973579",
+                    "1483891566249640076",
                     "1474092541644247315",
                     "1474205151999950889",
                     "1470543032142139434",
                     "1480592064768118967",
+                    "1488226421137473592",
                     "1478855935052222658",
-                    "1470854078983569606",
+                    "1482897963645796552",
                     "1475943803956232283",
+                    "1484604335034994780",
                     "1477027221175668829",
                     "1473407935970410724"
                 ]
             },
             "unclaimedUnignoredQuests": 0,
             "onQuestsPage": false,
-            "triggerQuestsRerender": false,
+            "triggerQuestsRerender": true,
             "resumeQuestIDs": {
                 "watch": [],
                 "play": [],
@@ -1480,7 +1491,8 @@
             "refreshSlashCommands": false,
             "restoreFileDownloadButton": false,
             "noModalAnimation": false,
-            "noBulletPoints": false
+            "noBulletPoints": false,
+            "disableAdoptTagPrompt": true
         },
         "Settings": {
             "enabled": true,
@@ -1583,6 +1595,24 @@
         "CustomCommands": {
             "enabled": false,
             "tagsList": {}
+        },
+        "VoiceChannelLog": {
+            "enabled": false
+        },
+        "ProfileCollectionsAPI": {
+            "enabled": true
+        },
+        "EquibopStreamFixes": {
+            "enabled": true,
+            "unlockQualityOptions": true,
+            "removeResolutionCap": true,
+            "forceEncoderSettings": true,
+            "preventDownscale": true,
+            "keyframeInterval": 5000,
+            "minBitrate": 500,
+            "raiseBitrateCaps": true,
+            "preventFramerateReduction": true,
+            "bitsPerPixelPct": 8
         }
     },
     "uiElements": {
@@ -1600,7 +1630,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1773614298896
+        "settingsSyncVersion": 1775057303891
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
