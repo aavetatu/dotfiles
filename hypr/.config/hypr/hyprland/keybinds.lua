@@ -11,17 +11,22 @@ hl.bind(
 )
 hl.bind(mainMod .. " + SHIFT + L ", hl.dsp.exec_cmd("systemctl suspend"))
 
-hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(vars.fileManager))
+-- Layout manipulation
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(vars.menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + SPACE", hl.dsp.layout("togglesplit")) -- dwindle only
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
--- Open custom programs
+-- Open programs
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(vars.menu))
+hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(vars.fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(vars.browser))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(vars.discord))
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("keepassxc"))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("pavucontrol"))
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 
 -- Move focus with mainMod + HJKL
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
@@ -48,10 +53,8 @@ hl.bind(mainMod .. " + SHIFT + I", hl.dsp.window.move({ workspace = 3 }))
 hl.bind(mainMod .. " + O", hl.dsp.focus({ workspace = 4 }))
 hl.bind(mainMod .. " + SHIFT + O", hl.dsp.window.move({ workspace = 4 }))
 
--- Example special workspace (scratchpad)
+-- Special workspace (scratchpad)
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
-hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
